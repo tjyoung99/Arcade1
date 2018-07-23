@@ -7,6 +7,7 @@ def setup():
     themeSetup()
     platform()
     logo()
+def draw():
     hangman()
 
     
