@@ -34,7 +34,7 @@ def logo():
     textSize (20)
     text ("GOOGLE MAN", 250, 50)
     
-def hangman():
+def man():
     head=createShape(ELLIPSE,330, 120, 40, 40) #hangman head
     leftarm=createShape(LINE,330,170, 310, 190)  #left hand
     rightarm=createShape(LINE,330,170, 350, 190) #right hand
@@ -42,4 +42,8 @@ def hangman():
     rightleg=createShape(LINE,330, 240, 350, 270) #right leg
     body=createShape(LINE,330, 140, 330, 240)  #hangman body
     
-    shape(head)
+    
+def hangman():
+    themeSetup()
+    platform()
+    logo()
