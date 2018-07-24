@@ -1,15 +1,4 @@
 from random import * 
-def themeSetup():
-    randkey = choice(keywords.keys())
-    topic = keywords[randkey]
-    guessingWords = randkey
-    fill(0)
-    text(topic, 80, 250)
-    textSize(25)
-    text("Topic", 66, 220)
-    fill(0)
-    text(guessingWords, 260, 500)
-        
 keywords = {
             "Tomato" : "Fruits",
             "Drake" : "Celebrities",
@@ -20,6 +9,19 @@ keywords = {
             "March" : "Months",
             "Hangman" : "Games"
             }
+randkey = choice(keywords.keys())
+def themeSetup():
+    
+    topic = keywords[randkey]
+    guessingWords = randkey
+    fill(0)
+    text(topic, 80, 250)
+    textSize(25)
+    text("Topic", 66, 220)
+    fill(0)
+    text(guessingWords, 260, 500)
+        
+
 
 def platform():
     line(250, 100, 250, 200) #first middle line

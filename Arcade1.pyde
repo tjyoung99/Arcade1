@@ -3,10 +3,12 @@ from Arcade2 import *
 person = "tiffany" 
 def setup(): 
     size(600,600)
-    background(255)
-    hangman()
+    
+   
     
 def draw():
+    background(255)
+    hangman()
     man()
     textSize(32)
     text("apple",25,35)
