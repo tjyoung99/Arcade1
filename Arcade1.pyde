@@ -1,7 +1,8 @@
 from random import * 
 from Arcade2 import *
-from Trav import*
-person = "tiffany" 
+from Trav import* 
+
+
 def setup(): 
     size(600,600)
     
@@ -16,4 +17,5 @@ def draw():
     squarep(298,20)
     squarel(318,10)
     squaree(328,20)
+
    # squareb()
