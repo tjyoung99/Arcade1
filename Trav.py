@@ -48,13 +48,13 @@ def squaree(x,w):
             e=True   
     rect(x, 475, w, 30)
     
-def squareb():
-    global a,b, p, l, e,
-    if b:
-        stroke()
-    else:
-        noStroke()
-    if keyPressed:
-        if key == 'b' :
-            b=True   
-ellipse (330, 120, 40, 40)
+#def squareb():
+    #global a, b, p, l, e
+    #if b:
+     #   stroke()
+   # else:
+     #   noStroke()
+    #if keyPressed:
+      #  if key == 'b' :
+       #     b=True   
+   # ellipse (330, 120, 40, 40)
