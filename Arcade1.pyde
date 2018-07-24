@@ -15,3 +15,4 @@ def draw():
     squarep(298,20)
     squarel(318,10)
     squaree(328,20)
+    squareb()
