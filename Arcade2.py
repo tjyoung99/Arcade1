@@ -1,13 +1,13 @@
 from random import * 
 keywords = {
-            "Tomato" : "Fruits",
-            "Drake" : "Celebrities",
-            "Beige" : "Colors",
-            "Googler" : "Jobs",
-            "Wings" : "Foods",
-            "Halloween" : "Holidays",
-            "March" : "Months",
-            "Hangman" : "Games"
+            "apple" : "Fruits",
+            #"Drake" : "Celebrities",
+            #"Beige" : "Colors",
+            #"Googler" : "Jobs",
+            #"Wings" : "Foods",
+            #"Halloween" : "Holidays",
+            #"March" : "Months",
+            #"Hangman" : "Games"
             }
 randkey = choice(keywords.keys())
 def themeSetup():
@@ -16,7 +16,7 @@ def themeSetup():
     guessingWords = randkey
     fill(0)
     text(topic, 80, 250)
-    textSize(25)
+    textSize(32)
     text("Topic", 66, 220)
     fill(0)
     text(guessingWords, 260, 500)
@@ -63,7 +63,7 @@ def squarea(x,w):
     if keyPressed:
         if key == 'a' :
             a=True   
-    rect(x, 10, w, 30)
+    rect(x, 475, w, 30)
 
 def squarep(x,w):
     global a, p, l, e
@@ -74,7 +74,7 @@ def squarep(x,w):
     if keyPressed:
         if key == 'p' :
             p=True   
-    rect(x, 10, w, 30)
+    rect(x, 475, w, 30)
     
     
 def squarel(x,w):
@@ -86,7 +86,7 @@ def squarel(x,w):
     if keyPressed:
         if key == 'l' :
             l=True   
-    rect(x, 10, w, 30)
+    rect(x, 475, w, 30)
     
 def squaree(x,w):
     global a, p, l, e
@@ -97,4 +97,4 @@ def squaree(x,w):
     if keyPressed:
         if key == 'e' :
             e=True   
-    rect(x, 10, w, 30)
+    rect(x, 475, w, 30)

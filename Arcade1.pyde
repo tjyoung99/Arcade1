@@ -10,14 +10,8 @@ def draw():
     background(255)
     hangman()
     man()
-    textSize(32)
-    text("apple",25,35)
-    squarea(25,18)
-    squarep(43,20)
-    squarep(63,20)
-    squarel(83,10)
-    squaree(93,20)
-
-
-
-    
+    squarea(260,18)
+    squarep(278,20)
+    squarep(298,20)
+    squarel(318,10)
+    squaree(328,20)
