@@ -13,13 +13,13 @@ def themeSetup():
         
 keywords = {
             "Apple" : "Fruits",
-            "Drake" : "Celebrities",
-            "Beige" : "Colors",
-            "Googler" : "Jobs",
-            "Wings" : "Foods",
-            "Halloween" : "Holidays",
-            "March" : "Months",
-            "Hangman" : "Games"
+            # "Drake" : "Celebrities",
+            # "Beige" : "Colors",
+            # "Googler" : "Jobs",
+            # "Wings" : "Foods",
+            # "Halloween" : "Holidays",
+            # "March" : "Months",
+            # "Hangman" : "Games"
             }
 
 def platform():
@@ -45,10 +45,10 @@ def hangman():
     
 
         
-    a=False
-    p=False
-    l=False
-    e=False
+a=False
+p=False
+l=False
+e=False
 
 def squarea(x,w):
     global a, p, l, e

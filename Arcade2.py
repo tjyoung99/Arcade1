@@ -1,18 +1,5 @@
 from random import * 
 from Hangman2 import *
-def themeSetup():
-    randkey = choice(keywords.keys())
-    topic = keywords[randkey]
-    guessingWords = randkey
-    global a, p, l, e, squarea, squarep, squarel, squaree
-    fillVal = color(0)
-    fill(0)
-    text(topic, 80, 250)
-    textSize(25)
-    text("Topic", 66, 220)
-    fill(0)
-    text(guessingWords, 260, 500)
-        
 keywords = {
             "Apple" : "Fruits",
             # "Drake" : "Celebrities",
@@ -23,6 +10,19 @@ keywords = {
             # "March" : "Months",
             # "Hangman" : "Games"
             }
+randkey = choice(keywords.keys())
+def themeSetup():
+    
+    topic = keywords[randkey]
+    guessingWords = randkey
+    fill(0)
+    text(topic, 80, 250)
+    textSize(32)
+
+    text("Topic", 66, 220)
+    fill(0)
+    text(guessingWords, 260, 500)
+        
 
 def platform():
     line(250, 100, 250, 200) #first middle line
@@ -31,8 +31,13 @@ def platform():
     line(220, 300, 280, 300) #last line of the platform
                       
 def logo():
+
     # img = loadImage("google-logo.png")
     # image (img, 210, 20, width/9, height/11)
+
+    #img = loadImage("google-logo.png")
+    #image (img, 210, 20, width/9, height/11)
+
     fill (0)
     textSize (20)
     text ("GOOGLE MAN", 250, 50)
@@ -45,14 +50,58 @@ def man():
     rightleg=createShape(LINE,330, 240, 350, 270) #right leg
     body=createShape(LINE,330, 140, 330, 240)  #hangman body
 
-    
 def hangman():
     themeSetup()
     platform()
     logo()
-    squarea()
-    squarep()
-    squarel()
-    squaree()
    
+
     
+a=False
+p=False
+l=False
+e=False
+def squarea(x,w):
+    global a, p, l, e
+    if a:
+        noFill()
+    else:
+        fill(0)
+    if keyPressed:
+        if key == 'a' :
+            a=True   
+    rect(x, 475, w, 30)
+
+def squarep(x,w):
+    global a, p, l, e
+    if p:
+        noFill()
+    else:
+        fill(0)
+    if keyPressed:
+        if key == 'p' :
+            p=True   
+    rect(x, 475, w, 30)
+    
+    
+def squarel(x,w):
+    global a, p, l, e
+    if l:
+        noFill()
+    else:
+        fill(0)
+    if keyPressed:
+        if key == 'l' :
+            l=True   
+    rect(x, 475, w, 30)
+    
+def squaree(x,w):
+    global a, p, l, e
+    if e:
+        noFill()
+    else:
+        fill(0)
+    if keyPressed:
+        if key == 'e' :
+            e=True   
+    rect(x, 475, w, 30)
