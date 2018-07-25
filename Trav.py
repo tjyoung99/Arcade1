@@ -28,8 +28,6 @@ beige = {
          }
 nobeige=["a","c","f","d","h","k","j","p","l","m","n","o","q","r","s","t","u",
          "v","w","x","y","z"]
-
-
 def square1 (letter, x,w):
     global apple
     if apple[letter]:
