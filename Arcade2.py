@@ -1,15 +1,17 @@
 from random import * 
 from Hangman2 import *
+from Trav import *
+
 keywords = {
             "apple" : "Fruits",
-            # "Drake" : "Celebrities",
-            # "Beige" : "Colors",
-            # "Googler" : "Jobs",
-            # "Wings" : "Foods",
-            # "Halloween" : "Holidays",
-            # "March" : "Months",
-            # "Hangman" : "Games"
+            "Drake" : "Celebrities",
+            "Beige" : "Colors",
+            "Googler" : "Jobs",
+            "Wings" : "Foods",
+            "March" : "Months",
             }
+
+
 randkey = choice(keywords.keys())
 def themeSetup():
     
@@ -32,15 +34,10 @@ def platform():
                       
 def logo():
 
-    # img = loadImage("google-logo.png")
-    # image (img, 210, 20, width/9, height/11)
-
-    #img = loadImage("google-logo.png")
-    #image (img, 210, 20, width/9, height/11)
-
+    PImage[] allFrames = Gif.getPImages(this, "google-gif.gif")
     fill (0)
-    textSize (20)
-    text ("GOOGLE MAN", 250, 50)
+    # textSize (20)
+    # text ("GOOGLE MAN", 250, 50)
     
 def man():
     head=createShape(ELLIPSE,330, 120, 40, 40) #hangman head

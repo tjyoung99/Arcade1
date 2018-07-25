@@ -1,60 +1,67 @@
-a=False
-p=False
-l=False
-e=False
-b=False
-def squarea(x,w):
-    global a, p, l, e
-    if a:
-        noFill()
-    else:
-        fill(0)
-    if keyPressed:
-        if key == 'a' :
-            a=True   
-    rect(x, 475, w, 30)
+# from Arcade2 import *
 
-def squarep(x,w):
-    global a, p, l, e
-    if p:
-        noFill()
-    else:
-        fill(0)
-    if keyPressed:
-        if key == 'p' :
-            p=True   
-    rect(x, 475, w, 30)
+# alphabet{
+#          "a":false,
+#          "b":false,
+#          "c":false,
+#          "d":false,
+#          "e":false,
+#          "g":false,
+#          "h":false,
+#          "i":false,
+#          "k":false,
+#          "l":false,
+#          "m":false,
+#          "n":false,
+#          "o":false,
+#          "p":false,
+#          "r":false,
+#          "s":false,
+#          "w":false,
+# }
+      
+# def squarea(x,w):
+#     global alphabet
+#     if alphabet["a"]:
+#         noFill()
+#     else:
+#         fill(0)
+#     if keyPressed:
+#         if key == 'a' :
+#             alphabet=True
+#     rect(x, 475, w, 30)
+
+# def squarep(x,w):
+#      global alphabet
+#      if p:
+#          noFill()
+#      else:
+#          fill(0)
+#      if keyPressed:
+#          if key == 'p' :
+#              alphabet=True   
+#      rect(x, 475, w, 30)
     
     
-def squarel(x,w):
-    global a, p, l, e
-    if l:
-        noFill()
-    else:
-        fill(0)
-    if keyPressed:
-        if key == 'l' :
-            l=True   
-    rect(x, 475, w, 30)
+# def squarel(x,w):
+#      global alphabet
+#      if l:
+#          noFill()
+#      else:
+#          fill(0)
+#      if keyPressed:
+#          if key == 'l' :
+#              aplhabet=True   
+#      rect(x, 475, w, 30)
     
-def squaree(x,w):
-    global a, p, l, e
-    if e:
-        noFill()
-    else:
-        fill(0)
-    if keyPressed:
-        if key == 'e' :
-            e=True   
-    rect(x, 475, w, 30)
+# def squaree(x,w):
+#      global alphabet
+#      if e:
+#          noFill()
+#      else:
+#          fill(0)
+#      if keyPressed:
+#          if key == 'e' :
+#              alphabet=True   
+#      rect(x, 475, w, 30)
     
-#def squareb():
-    #global a, b, p, l, e
-    #if b:
-     #   stroke()
-   # else:
-     #   noStroke()
-    #if keyPressed:
-      #  if key == 'b' :
-       #     b=True   
-   # ellipse (330, 120, 40, 40)
