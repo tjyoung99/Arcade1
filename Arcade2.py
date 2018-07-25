@@ -73,6 +73,7 @@ def man(counter):
     for part in range (counter):
         shape(parts[part])
 
+
     
 
 def hangman():
