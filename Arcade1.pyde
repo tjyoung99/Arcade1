@@ -1,6 +1,7 @@
 from random import * 
 from Arcade2 import *
 from Trav import* 
+from words import *
 
 
 def setup(): 
@@ -12,10 +13,7 @@ def draw():
     background(255)
     hangman()
     man()
-    squarea(260,18)
-    squarep(278,20)
-    squarep(298,20)
-    squarel(318,10)
-    squaree(328,20)
-
-   # squareb()
+    apple()
+    # drake()
+    
+    

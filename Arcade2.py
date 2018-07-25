@@ -1,15 +1,16 @@
 from random import * 
 from Hangman2 import *
+from Trav import *
 keywords = {
             "apple" : "Fruits",
-            # "Drake" : "Celebrities",
+            "drake" : "Celebrities",
             # "Beige" : "Colors",
             # "Googler" : "Jobs",
             # "Wings" : "Foods",
-            # "Halloween" : "Holidays",
             # "March" : "Months",
-            # "Hangman" : "Games"
+       
             }
+
 randkey = choice(keywords.keys())
 def themeSetup():
     
@@ -22,6 +23,7 @@ def themeSetup():
     text("Topic", 66, 220)
     fill(0)
     text(guessingWords, 260, 500)
+
         
 
 def platform():
