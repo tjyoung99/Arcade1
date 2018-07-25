@@ -12,18 +12,13 @@ def setup():
 def draw():
     background(255)
     hangman()
-<<<<<<< HEAD
-    man()
-=======
-<<<<<<< HEAD
     man(counter)
-    squarea(260,18)
-    squarep(278,20)
-    squarep(298,20)
-    squarel(318,10)
-    squaree(328,20)
+    apple()
+    drake()
+    # beige()
+    
 
-   # squareb()
+   
 def keyReleased():
     global counter
     if key =='b':
@@ -70,24 +65,15 @@ def keyReleased():
         counter=counter+1
     if key =='z':
         counter=counter+1
-# if key =='a':
-#     noFill()
-# else:
-#     fill(0)
-# rect(260, 475, 18, 30)
->>>>>>> 2f0452cb1f9bb2ff4a4aa0764803b3767f19c119
-    # squarea(260,18)
-    # squarep(278,20)
-    # squarep(298,20)
-    # squarel(318,10)
-    # squaree(328,20)
-<<<<<<< HEAD
-=======
-=======
-    man()
-    apple()
-    # drake()
+    if key =='a':
+        noFill()
+    else:
+        fill(0)
+    rect(260, 475, 18, 30)
+
+    
+
+   
+
     
     
->>>>>>> ebe70dfae81ae844d593e0355476623bbe863f9c
->>>>>>> 2f0452cb1f9bb2ff4a4aa0764803b3767f19c119

@@ -1,20 +1,19 @@
 from random import * 
 from Hangman2 import *
-<<<<<<< HEAD
+
 from Trav import *
 
 keywords = {
             "apple" : "Fruits",
-            "Drake" : "Celebrities",
-            "Beige" : "Colors",
-            "Googler" : "Jobs",
-            "Wings" : "Foods",
-            "March" : "Months",
+            "drake" : "Celebrities",
+            # "Beige" : "Colors",
+            # "Googler" : "Jobs",
+            # "Wings" : "Foods",
+            # "March" : "Months",
             }
 
 
-=======
-<<<<<<< HEAD
+
 def man1():
     global parts
     head=createShape(ELLIPSE,330, 120, 40, 40) #hangman head
@@ -26,20 +25,7 @@ def man1():
     parts=[head,leftarm,rightarm,leftleg,rightleg,body]
 
 parts=[]
-=======
-from Trav import *
->>>>>>> ebe70dfae81ae844d593e0355476623bbe863f9c
-keywords = {
-            "apple" : "Fruits",
-            "drake" : "Celebrities",
-            # "Beige" : "Colors",
-            # "Googler" : "Jobs",
-            # "Wings" : "Foods",
-            # "March" : "Months",
-       
-            }
 
->>>>>>> 2f0452cb1f9bb2ff4a4aa0764803b3767f19c119
 randkey = choice(keywords.keys())
 def themeSetup():
     
@@ -62,11 +48,9 @@ def platform():
     line(220, 300, 280, 300) #last line of the platform
                       
 def logo():
-
-    PImage[] allFrames = Gif.getPImages(this, "google-gif.gif")
     fill (0)
-    # textSize (20)
-    # text ("GOOGLE MAN", 250, 50)
+    textSize (20)
+    text ("OOGLE MAN", 250, 50)
     
 def man(counter):
     for part in range (counter):
@@ -74,13 +58,11 @@ def man(counter):
     
     
 
-            
-    
-
 def hangman():
     themeSetup()
     platform()
     logo()
+
    
 
     

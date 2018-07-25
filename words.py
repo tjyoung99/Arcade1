@@ -12,3 +12,11 @@ def drake():
     square2("a", 298,20)
     square2("k", 318,10)
     square2("e", 328,20)
+    
+# def beige():
+#     square3("b", 260,18)
+#     square3("e", 278,20)
+#     square3("i", 298,20)
+#     square3("g", 318,10)
+#     square3("e", 328,20)
+    
