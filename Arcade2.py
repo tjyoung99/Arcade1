@@ -4,11 +4,19 @@ from Trav import *
 
 keywords = {
             "apple" : "Fruits",
+<<<<<<< HEAD
             # "drake" : "Celebrities",
             # "Beige" : "Colors",
             # "Googler" : "Jobs",
             # "Wings" : "Foods",
             # "March" : "Months",
+=======
+            "drake" : "Celebrities",
+            "beige" : "Colors",
+            "googler" : "Jobs",
+            "wings" : "Foods",
+            "march" : "Months",
+>>>>>>> 88f49d09b68b1aeceaa4f72d787e5d4191282050
             }
 
 def man1():
@@ -47,7 +55,7 @@ def platform():
 def logo():
     fill (0)
     textSize (20)
-    text ("OOGLE MAN", 250, 50)
+    text ("GOOGLE MAN", 250, 50)
     
         
 def photo():
@@ -55,6 +63,7 @@ def photo():
     image(img, 200, 15)
     
 def man(counter):
+    global parts
     for part in range (counter):
         shape(parts[part])
     
