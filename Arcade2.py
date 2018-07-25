@@ -1,5 +1,6 @@
 from random import * 
 from Hangman2 import *
+<<<<<<< HEAD
 from Trav import *
 
 keywords = {
@@ -12,6 +13,33 @@ keywords = {
             }
 
 
+=======
+<<<<<<< HEAD
+def man1():
+    global parts
+    head=createShape(ELLIPSE,330, 120, 40, 40) #hangman head
+    leftarm=createShape(LINE,330,170, 310, 190)  #left hand
+    rightarm=createShape(LINE,330,170, 350, 190) #right hand
+    leftleg=createShape(LINE,330, 235 ,310, 270) #left leg
+    rightleg=createShape(LINE,330, 240, 350, 270) #right leg
+    body=createShape(LINE,330, 140, 330, 240)  #hangman body
+    parts=[head,leftarm,rightarm,leftleg,rightleg,body]
+
+parts=[]
+=======
+from Trav import *
+>>>>>>> ebe70dfae81ae844d593e0355476623bbe863f9c
+keywords = {
+            "apple" : "Fruits",
+            "drake" : "Celebrities",
+            # "Beige" : "Colors",
+            # "Googler" : "Jobs",
+            # "Wings" : "Foods",
+            # "March" : "Months",
+       
+            }
+
+>>>>>>> 2f0452cb1f9bb2ff4a4aa0764803b3767f19c119
 randkey = choice(keywords.keys())
 def themeSetup():
     
@@ -24,6 +52,7 @@ def themeSetup():
     text("Topic", 66, 220)
     fill(0)
     text(guessingWords, 260, 500)
+
         
 
 def platform():
@@ -39,13 +68,14 @@ def logo():
     # textSize (20)
     # text ("GOOGLE MAN", 250, 50)
     
-def man():
-    head=createShape(ELLIPSE,330, 120, 40, 40) #hangman head
-    leftarm=createShape(LINE,330,170, 310, 190)  #left hand
-    rightarm=createShape(LINE,330,170, 350, 190) #right hand
-    leftleg=createShape(LINE,330, 235 ,310, 270) #left leg
-    rightleg=createShape(LINE,330, 240, 350, 270) #right leg
-    body=createShape(LINE,330, 140, 330, 240)  #hangman body
+def man(counter):
+    for part in range (counter):
+        shape(parts[part])
+    
+    
+
+            
+    
 
 def hangman():
     themeSetup()
