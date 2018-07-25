@@ -28,7 +28,16 @@ beige = {
          }
 nobeige=["a","c","f","d","h","k","j","p","l","m","n","o","q","r","s","t","u",
          "v","w","x","y","z"]
-
+googler={"g": False,
+         "o": False,
+         "o": False,
+         "g": False,
+         "l": False,
+         "e": False,
+         "r": False,
+         }
+nogoogler=["a","c","f","d","h","k","j","p","i","m","n","b","q","s","t","u",
+         "v","w","x","y","z"]
 
 def square1 (letter, x,w):
     global apple
@@ -52,16 +61,16 @@ def square2 (letter, x,w):
             drake[letter]=True   
     rect(x, 475, w, 30)
 
-# def square3(letter, x,w):
-#      global beige
-#      if beige[letter]:
+def square3(letter, x,w):
+     global beige
+     if beige[letter]:
 
-#          noFill()
-#      else:
-#          fill(0)
-#      if keyPressed:
+         noFill()
+     else:
+         fill(0)
+     if keyPressed:
 
-#          if key == letter :
-#              beige[letter]=True   
-#      rect(x, 475, w, 30)
+         if key == letter :
+             beige[letter]=True   
+     rect(x, 475, w, 30)
     
