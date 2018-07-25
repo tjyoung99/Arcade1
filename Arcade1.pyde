@@ -2,19 +2,41 @@ from random import *
 from Arcade2 import *
 from Trav import* 
 from words import *
-
+from startmenu import *
+started = False 
 counter=0
+
 def setup(): 
     size(600,600)
-    man1()
+    background(255,0,0)
    
     
 def draw():
     background(255)
-    hangman()
-    man(counter)
+    global started
+    if started:
+        themeSetup()
+        platform()
+        logo()
+        photo()
+        man(counter)
+        man1()
+        delete()
+    
+        
+    else:
+        startup()
+        photo()
+        logo()
+
+def words():
     apple()
-    drake()
+    
+def mouseClicked():
+    global started
+    started = True
+                        
+    # drake()
     # beige()
     
 

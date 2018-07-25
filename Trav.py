@@ -6,13 +6,13 @@ apple = {
          "l": False,
          "p": False,
             }
-drake = {
-         "d": False,
-         "r": False,
-         "a": False,
-         "k": False,
-         "e": False,
-         }
+# drake = {
+#          "d": False,
+#          "r": False,
+#          "a": False,
+#          "k": False,
+#          "e": False,
+#          }
          
 # beige = {
 #          "b": False,
@@ -34,16 +34,16 @@ def square1 (letter, x,w):
             apple[letter]=True   
     rect(x, 475, w, 30)
     
-def square2 (letter, x,w):
-    global drake
-    if drake[letter]:
-        noFill()
-    else:
-        fill(0)
-    if keyPressed:
-        if key == letter :
-            drake[letter]=True   
-    rect(x, 475, w, 30)
+# def square2 (letter, x,w):
+#     global drake
+#     if drake[letter]:
+#         noFill()
+#     else:
+#         fill(0)
+#     if keyPressed:
+#         if key == letter :
+#             drake[letter]=True   
+#     rect(x, 475, w, 30)
 
 # def square3(letter, x,w):
 #      global beige
