@@ -5,7 +5,7 @@ from Trav import *
 
 keywords = {
             "apple" : "Fruits",
-            "drake" : "Celebrities",
+            #"drake" : "Celebrities",
             # "Beige" : "Colors",
             # "Googler" : "Jobs",
             # "Wings" : "Foods",
@@ -50,9 +50,10 @@ def platform():
 def logo():
     fill (0)
     textSize (20)
-    text ("OOGLE MAN", 250, 50)
+    text ("GOOGLE MAN", 250, 50)
     
 def man(counter):
+    global parts
     for part in range (counter):
         shape(parts[part])
     
