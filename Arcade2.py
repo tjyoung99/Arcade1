@@ -5,11 +5,11 @@ from Trav import *
 
 keywords = {
             "apple" : "Fruits",
-            #"drake" : "Celebrities",
-            # "Beige" : "Colors",
-            # "Googler" : "Jobs",
-            # "Wings" : "Foods",
-            # "March" : "Months",
+            "drake" : "Celebrities",
+            "beige" : "Colors",
+            "googler" : "Jobs",
+            "wings" : "Foods",
+            "march" : "Months",
             }
 
 

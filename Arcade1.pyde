@@ -13,68 +13,47 @@ def draw():
     background(255)
     hangman()
     man(counter)
-    apple()
-    # drake()
-    # beige()
+    if randkey=="apple":
+        apple()
+    if randkey=="drake":
+        drake()
+    if randkey=="beige":
+        beige()
+    if randkey=="googler":
+        googler()
+    if randkey=="wings":
+        wings()
+    if randkey=="march":
+        march()
     
 
    
 def keyReleased():
     global counter
-    for letters in range (len (noapple)):
-        if key == noapple[letters]:
-            counter=counter+1
-    
-    # if key =='b':
-    #     counter=counter+1
-    # if key =='c':
-    #     counter=counter+1
-    # if key =='d':
-    #     counter=counter+1
-    # if key =='f':
-    #     counter=counter+1
-    # if key =='g':
-    #     counter=counter+1
-    # if key =='h':
-    #     counter=counter+1
-    # if key =='i':
-    #     counter=counter+1
-    # if key =='j':
-    #     counter=counter+1
-    # if key =='k':
-    #     counter=counter+1
-    # if key =='m':
-    #     counter=counter+1
-    # if key =='n':
-    #     counter=counter+1
-    # if key =='o':
-    #     counter=counter+1
-    # if key =='q':
-    #     counter=counter+1
-    # if key =='r':
-    #     counter=counter+1
-    # if key =='s':
-    #     counter=counter+1
-    # if key =='t':
-    #     counter=counter+1
-    # if key =='u':
-    #     counter=counter+1
-    # if key =='v':
-    #     counter=counter+1
-    # if key =='w':
-    #     counter=counter+1
-    # if key =='x':
-    #     counter=counter+1
-    # if key =='y':
-    #     counter=counter+1
-    # if key =='z':
-    #     counter=counter+1
-
-    
-
-    
-
-   
+    if randkey=="apple":
+        for letters in range (len (noapple)):
+            if key == noapple[letters]:
+                counter=counter+1
+    if randkey=="drake":
+        for letters in range (len (nodrake)):
+            if key == nodrake[letters]:
+                counter=counter+1
+    if randkey=="beige":
+        for letters in range (len (nobeige)):
+            if key == nobeige[letters]:
+                counter=counter+1
+    if randkey=="googler":
+        for letters in range (len (nogoogler)):
+            if key == nogoogler[letters]:
+                counter=counter+1
+   if randkey=="wings":
+        for letters in range (len (nowings)):
+            if key == nowings[letters]:
+                counter=counter+1
+    if randkey=="march":
+        for letters in range (len (nomarch)):
+            if key == nomarch[letters]:
+                counter=counter+1
 
     
     

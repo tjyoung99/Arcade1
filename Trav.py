@@ -7,23 +7,27 @@ apple = {
          "p": False,
          "p": False,
             }
-noapple=["b","c","d","f","h","i","j","k","m","n","o","q","r","s","t","u",
+noapple=["b","c","d","g","f","h","i","j","k","m","n","o","q","r","s","t","u",
          "v","w","x","y","z"]
-# drake = {
-#          "d": False,
-#          "r": False,
-#          "a": False,
-#          "k": False,
-#          "e": False,
-#          }
+drake = {
+         "d": False,
+         "r": False,
+         "a": False,
+         "k": False,
+         "e": False,
+         }
          
-# beige = {
-#          "b": False,
-#          "e": False,
-#          "i": False,
-#          "g": False,
-#          "e": False,
-#          }
+nodrake=["b","c","f","g","h","i","j","p","l","m","n","o","q","s","t","u",
+         "v","w","x","y","z"]
+beige = {
+         "b": False,
+         "e": False,
+         "i": False,
+         "g": False,
+         "e": False,
+         }
+nobeige=["a","c","f","d","h","k","j","p","l","m","n","o","q","r","s","t","u",
+         "v","w","x","y","z"]
 
 
 def square1 (letter, x,w):
@@ -37,16 +41,16 @@ def square1 (letter, x,w):
             apple[letter]=True   
     rect(x, 475, w, 30)
     
-# def square2 (letter, x,w):
-#     global drake
-#     if drake[letter]:
-#         noFill()
-#     else:
-#         fill(0)
-#     if keyPressed:
-#         if key == letter :
-#             drake[letter]=True   
-#     rect(x, 475, w, 30)
+def square2 (letter, x,w):
+    global drake
+    if drake[letter]:
+        noFill()
+    else:
+        fill(0)
+    if keyPressed:
+        if key == letter :
+            drake[letter]=True   
+    rect(x, 475, w, 30)
 
 # def square3(letter, x,w):
 #      global beige
@@ -61,44 +65,3 @@ def square1 (letter, x,w):
 #              beige[letter]=True   
 #      rect(x, 475, w, 30)
     
-# def squaree(x,w):
-#      global alphabet
-
-#          if key == 'p' :
-#              alphabet["p"]=True   
-#      rect(x, 475, w, 30)
-    
-# def squarel(x,w):
-#      global alphabet
-#      if :
-#          noFill()
-#      else:
-#          fill(0)
-#      if keyPressed:
-#          if key == 'l' :
-#              alphabet=True   
-#      rect(x, 475, w, 30)
-    
-# def squaree(x,w):
-#      global alphabet 
-
-#      if e:
-#          noFill()
-#      else:
-#          fill(0)
-#      if keyPressed:
-#          if key == 'e' :
-#              alphabet=True   
-#      rect(x, 475, w, 30)
-    
-
-# def squareb():
-#     global alphabet
-#     if b:
-#         stroke()
-#     else:
-#         noStroke()
-#     if keyPressed:
-#         if key == 'b' :
-#             alphabet=True   
-#     ellipse (330, 120, 40, 40)
