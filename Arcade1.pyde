@@ -46,7 +46,7 @@ def keyReleased():
         for letters in range (len (nogoogler)):
             if key == nogoogler[letters]:
                 counter=counter+1
-   if randkey=="wings":
+    if randkey=="wings":
         for letters in range (len (nowings)):
             if key == nowings[letters]:
                 counter=counter+1
