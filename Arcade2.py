@@ -1,5 +1,16 @@
 from random import * 
 from Hangman2 import *
+def man1():
+    global parts
+    head=createShape(ELLIPSE,330, 120, 40, 40) #hangman head
+    leftarm=createShape(LINE,330,170, 310, 190)  #left hand
+    rightarm=createShape(LINE,330,170, 350, 190) #right hand
+    leftleg=createShape(LINE,330, 235 ,310, 270) #left leg
+    rightleg=createShape(LINE,330, 240, 350, 270) #right leg
+    body=createShape(LINE,330, 140, 330, 240)  #hangman body
+    parts=[head,leftarm,rightarm,leftleg,rightleg,body]
+
+parts=[]
 keywords = {
             "apple" : "Fruits",
             # "Drake" : "Celebrities",
@@ -42,13 +53,14 @@ def logo():
     textSize (20)
     text ("GOOGLE MAN", 250, 50)
     
-def man():
-    head=createShape(ELLIPSE,330, 120, 40, 40) #hangman head
-    leftarm=createShape(LINE,330,170, 310, 190)  #left hand
-    rightarm=createShape(LINE,330,170, 350, 190) #right hand
-    leftleg=createShape(LINE,330, 235 ,310, 270) #left leg
-    rightleg=createShape(LINE,330, 240, 350, 270) #right leg
-    body=createShape(LINE,330, 140, 330, 240)  #hangman body
+def man(counter):
+    for part in range (counter):
+        shape(parts[part])
+    
+    
+
+            
+    
 
 def hangman():
     themeSetup()
