@@ -1,5 +1,6 @@
 from random import * 
 from Hangman2 import *
+<<<<<<< HEAD
 def man1():
     global parts
     head=createShape(ELLIPSE,330, 120, 40, 40) #hangman head
@@ -11,16 +12,19 @@ def man1():
     parts=[head,leftarm,rightarm,leftleg,rightleg,body]
 
 parts=[]
+=======
+from Trav import *
+>>>>>>> ebe70dfae81ae844d593e0355476623bbe863f9c
 keywords = {
             "apple" : "Fruits",
-            # "Drake" : "Celebrities",
+            "drake" : "Celebrities",
             # "Beige" : "Colors",
             # "Googler" : "Jobs",
             # "Wings" : "Foods",
-            # "Halloween" : "Holidays",
             # "March" : "Months",
-            # "Hangman" : "Games"
+       
             }
+
 randkey = choice(keywords.keys())
 def themeSetup():
     
@@ -33,6 +37,7 @@ def themeSetup():
     text("Topic", 66, 220)
     fill(0)
     text(guessingWords, 260, 500)
+
         
 
 def platform():

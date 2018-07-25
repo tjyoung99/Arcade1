@@ -1,6 +1,7 @@
 from random import * 
 from Arcade2 import *
 from Trav import* 
+from words import *
 
 counter=0
 def setup(): 
@@ -11,6 +12,7 @@ def setup():
 def draw():
     background(255)
     hangman()
+<<<<<<< HEAD
     man(counter)
     squarea(260,18)
     squarep(278,20)
@@ -75,3 +77,10 @@ def keyReleased():
     # squarep(298,20)
     # squarel(318,10)
     # squaree(328,20)
+=======
+    man()
+    apple()
+    # drake()
+    
+    
+>>>>>>> ebe70dfae81ae844d593e0355476623bbe863f9c
