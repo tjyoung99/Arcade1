@@ -8,56 +8,35 @@ counter=0
 
 def setup(): 
     size(600,600)
-    background(255,0,0)
+    man1()
    
     
 def draw():
     background(255)
-<<<<<<< HEAD
     global started
+    hangman()
+    man(counter)
     if started:
         themeSetup()
         platform()
         logo()
         photo()
+        answers()
         man(counter)
-        man1()
-        delete()
     
-        
+    
+      
     else:
         startup()
         photo()
         logo()
 
-def words():
-    apple()
-    
 def mouseClicked():
     global started
     started = True
                         
-    # drake()
-    # beige()
-=======
-    hangman()
-    man(counter)
-    if randkey=="apple":
-        apple()
-    if randkey=="drake":
-        drake()
-    if randkey=="beige":
-        beige()
-    if randkey=="googler":
-        googler()
-    if randkey=="wings":
-        wings()
-    if randkey=="march":
-        march()
->>>>>>> 88f49d09b68b1aeceaa4f72d787e5d4191282050
-    
 
-   
+    
 def keyReleased():
     global counter
     if randkey=="apple":

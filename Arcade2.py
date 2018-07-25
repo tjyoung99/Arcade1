@@ -1,22 +1,15 @@
 from random import * 
 from Hangman2 import *
 from Trav import *
-
+from words import *
 keywords = {
             "apple" : "Fruits",
-<<<<<<< HEAD
-            # "drake" : "Celebrities",
-            # "Beige" : "Colors",
-            # "Googler" : "Jobs",
-            # "Wings" : "Foods",
-            # "March" : "Months",
-=======
             "drake" : "Celebrities",
             "beige" : "Colors",
             "googler" : "Jobs",
             "wings" : "Foods",
             "march" : "Months",
->>>>>>> 88f49d09b68b1aeceaa4f72d787e5d4191282050
+
             }
 
 def man1():
@@ -33,8 +26,21 @@ parts=[]
 
 randkey = choice(keywords.keys())
 
+def answers():
+ if randkey=="apple":
+    apple()
+ elif randkey=="drake":
+    drake()
+ elif randkey=="beige":
+    beige()
+ elif randkey=="googler":
+    googler()
+ elif randkey=="wings":
+    wings()
+ elif randkey=="march":
+    march() 
+
 def themeSetup():
-    
     topic = keywords[randkey]
     guessingWords = randkey
     fill(0)
@@ -66,17 +72,15 @@ def man(counter):
     global parts
     for part in range (counter):
         shape(parts[part])
-    
+
     
 
 def hangman():
-
     themeSetup()
     platform()
     logo()
     photo()
-    man(counter)
-    man1()
+    
 
  
 
