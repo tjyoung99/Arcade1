@@ -12,6 +12,8 @@ def Exit():
     rect(550, 550, 50, 50)
     fill(255)
     text ("Exit", 560, 580)
+    
+
        
 
 

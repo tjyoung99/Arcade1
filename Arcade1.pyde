@@ -11,16 +11,15 @@ def setup():
     global player 
     size(600,600)
     man1()
-    minim = Minim (this)
-    player = minim.loadFile("videogame.mp3")
-    player.play()
+    # minim = Minim (this)
+    # player = minim.loadFile("videogame.mp3")
+    # player.play()
     
 
 def draw():
     background(255)
     global started
     hangman()
-    man()
     apple()
     man(counter)
     
@@ -33,7 +32,7 @@ def draw():
         answers()
         man(counter)
         Exit()
-            
+           
     else:
         startup()
         photo()
@@ -43,9 +42,10 @@ def mouseClicked():
     global started
     started = True
                         
-def mousePressed():
-    if mousePressed and (mouseX >= 550 and mouseX <= 6000) and (mouseY >= 550 and mouseY <= 600):
-       exit()
+# def mousePressed():
+#     if mousePressed and (mouseX >= 550 and mouseX <= 6000) and (mouseY >= 550 and mouseY <= 600):
+#        exit()
+       
     
 def keyReleased():
     global counter
