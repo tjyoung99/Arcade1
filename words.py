@@ -7,6 +7,7 @@ def apple():
       square1("l", 318,10)
       square1("e", 328,20)
       
+
 def drake():
     square2("d", 260,18)
     square2("r", 278,15)

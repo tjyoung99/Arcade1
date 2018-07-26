@@ -74,6 +74,7 @@ def square1 (letter, x,w):
             apple[letter]=True   
     rect(x, 475, w, 30)
     
+
 def square2 (letter, x,w):
     global drake
     if drake[letter]:

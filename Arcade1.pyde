@@ -15,11 +15,16 @@ def setup():
     player = minim.loadFile("videogame.mp3")
     player.play()
     
+
 def draw():
     background(255)
     global started
     hangman()
+    man()
+    apple()
     man(counter)
+    
+    
     if started:
         themeSetup()
         platform()
@@ -70,4 +75,5 @@ def keyReleased():
                 counter=counter+1
 
     
+
     
