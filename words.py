@@ -1,4 +1,5 @@
 from Trav import *
+
 def apple():
       square1("a", 260,18)
       square1("p", 278,20)

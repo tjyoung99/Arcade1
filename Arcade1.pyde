@@ -3,13 +3,17 @@ from Arcade2 import *
 from Trav import* 
 from words import *
 from startmenu import *
+add_library('minim') 
 started = False 
 counter=0
 
-def setup(): 
+def setup():
+    global player 
     size(600,600)
     man1()
-   
+    minim = Minim (this)
+    player = minim.loadFile("videogame.mp3")
+    player.play()
     
 def draw():
     background(255)
@@ -23,9 +27,8 @@ def draw():
         photo()
         answers()
         man(counter)
-    
-    
-      
+        Exit()
+            
     else:
         startup()
         photo()
@@ -35,7 +38,9 @@ def mouseClicked():
     global started
     started = True
                         
-
+def mousePressed():
+    if mousePressed and (mouseX >= 550 and mouseX <= 6000) and (mouseY >= 550 and mouseY <= 600):
+       exit()
     
 def keyReleased():
     global counter

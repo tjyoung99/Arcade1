@@ -61,7 +61,7 @@ def platform():
 def logo():
     fill (0)
     textSize (20)
-    text ("GOOGLE MAN", 250, 50)
+    text ("OOGLE MAN", 250, 50)
     
         
 def photo():
@@ -72,7 +72,7 @@ def man(counter):
     global parts
     for part in range (counter):
         shape(parts[part])
-
+    
 
     
 
