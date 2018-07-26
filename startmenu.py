@@ -1,6 +1,4 @@
 from Arcade2 import *
-
-
 def startup():
     fill(255,0,0)
     text ("Start", 260, 300)
@@ -17,14 +15,8 @@ def Exit():
     fill(255)
     text ("Exit", 560, 580)
     
-
-    
-
-       
-
-
-
-        
-
-
-        
+def restart():
+    fill(0)
+    rect(0, 550, 100, 100)
+    fill(255)
+    text ("Restart", 20, 580)

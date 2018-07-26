@@ -1,5 +1,8 @@
+
 from Arcade2 import * 
+# add_library('minim') 
 from random import *
+
 from Arcade2 import *
 
 
@@ -21,6 +24,7 @@ drake = {
          "e": False,
          }
 
+         
 nodrake=["b","c","f","g","h","i","j","p","l","m","n","o","q","s","t","u",
          "v","w","x","y","z"]
 beige = {
@@ -71,7 +75,7 @@ def square1 (letter, x,w):
         fill(0)
     if keyPressed:
         if key == letter :
-            apple[letter]=True   
+            apple[letter]=True 
     rect(x, 475, w, 30)
     
 def square2 (letter, x,w):
@@ -93,7 +97,7 @@ def square3(letter, x,w):
          fill(0)
      if keyPressed:
          if key == letter :
-             beige[letter]=True   
+             beige[letter]=True)                   
      rect(x, 475, w, 30)
     
 def square4(letter, x,w):
@@ -104,7 +108,7 @@ def square4(letter, x,w):
          fill(0)
      if keyPressed:
          if key == letter :
-             googler[letter]=True 
+             googler[letter]=True                
      rect(x, 475, w, 30)
     
 def square5(letter, x,w):
@@ -115,7 +119,7 @@ def square5(letter, x,w):
          fill(0)
      if keyPressed:
          if key == letter :
-             wings[letter]=True   
+             wings[letter]=True                   
      rect(x, 475, w, 30)
      
 def square6(letter, x,w):
@@ -126,7 +130,7 @@ def square6(letter, x,w):
          fill(0)
      if keyPressed:
          if key == letter :
-             march[letter]=True   
+             march[letter]=True                   
      rect(x, 475, w, 30)
 
 def gameover (counter):
