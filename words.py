@@ -1,10 +1,16 @@
 from Trav import *
+
 def apple():
       square1("a", 260,18)
       square1("p", 278,20)
       square1("p", 298,20)
       square1("l", 318,10)
       square1("e", 328,20)
+<<<<<<< HEAD
+=======
+      
+
+>>>>>>> 118f9c2e9979b5ee9a6e5e97cfa5c4da577fb624
 def drake():
     square2("d", 260,18)
     square2("r", 278,15)
