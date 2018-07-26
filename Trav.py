@@ -88,7 +88,6 @@ def square2 (letter, x,w):
 def square3(letter, x,w):
      global beige
      if beige[letter]:
-
          noFill()
      else:
          fill(0)
@@ -100,25 +99,21 @@ def square3(letter, x,w):
 def square4(letter, x,w):
      global googler
      if googler[letter]:
-
          noFill()
      else:
          fill(0)
      if keyPressed:
-
          if key == letter :
-             googler[letter]=True   
+             googler[letter]=True 
      rect(x, 475, w, 30)
     
 def square5(letter, x,w):
      global wings
      if wings[letter]:
-
          noFill()
      else:
          fill(0)
      if keyPressed:
-
          if key == letter :
              wings[letter]=True   
      rect(x, 475, w, 30)
@@ -126,12 +121,10 @@ def square5(letter, x,w):
 def square6(letter, x,w):
      global march
      if march[letter]:
-
          noFill()
      else:
          fill(0)
      if keyPressed:
-
          if key == letter :
              march[letter]=True   
      rect(x, 475, w, 30)

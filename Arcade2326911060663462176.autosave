@@ -1,7 +1,8 @@
 from random import * 
 from Hangman2 import *
+
 from Trav import *
-from words import *
+
 keywords = {
             "apple" : "Fruits",
             "drake" : "Celebrities",
@@ -9,9 +10,9 @@ keywords = {
             "googler" : "Jobs",
             "wings" : "Foods",
             "march" : "Months",
-            
-
             }
+
+
 
 def man1():
     global parts
@@ -26,22 +27,8 @@ def man1():
 parts=[]
 
 randkey = choice(keywords.keys())
-
-def answers():
- if randkey=="apple":
-    apple()
- elif randkey=="drake":
-    drake()
- elif randkey=="beige":
-    beige()
- elif randkey=="googler":
-    googler()
- elif randkey=="wings":
-    wings()
- elif randkey=="march":
-    march() 
-
 def themeSetup():
+    
     topic = keywords[randkey]
     guessingWords = randkey
     fill(0)
@@ -53,6 +40,7 @@ def themeSetup():
     text(guessingWords, 260, 500)
 
         
+
 def platform():
     line(250, 100, 250, 200) #first middle line
     line(300, 100, 250, 100) #right line ( where hangman head is placed)
@@ -64,26 +52,17 @@ def logo():
     textSize (20)
     text ("GOOGLE MAN", 250, 50)
     
-        
-def photo():
-    img = loadImage("gr.png")
-    image(img, 200, 15)
-    
 def man(counter):
     global parts
     for part in range (counter):
-        shape(parts[part])
 
+    
     
 
 def hangman():
     themeSetup()
     platform()
     logo()
-    photo()
-    
-
- 
 
    
 

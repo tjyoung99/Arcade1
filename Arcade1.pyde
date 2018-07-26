@@ -3,6 +3,7 @@ from Arcade2 import *
 from Trav import* 
 from words import *
 from startmenu import *
+from meh import *
 started = False 
 counter=0
 
@@ -64,5 +65,4 @@ def keyReleased():
             if key == nomarch[letters]:
                 counter=counter+1
 
-    
-    
+   
