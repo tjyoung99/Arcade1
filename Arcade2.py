@@ -15,6 +15,7 @@ keywords = {
 
 def man1():
     global parts
+    fill(0)
     head=createShape(ELLIPSE,330, 120, 40, 40) #hangman head
     leftarm=createShape(LINE,330,170, 310, 190)  #left hand
     rightarm=createShape(LINE,330,170, 350, 190) #right hand
@@ -62,7 +63,7 @@ def platform():
 def logo():
     fill (0)
     textSize (20)
-    text ("GOOGLE MAN", 250, 50)
+    text ("OOGLE MAN", 250, 50)
     
         
 def photo():
@@ -73,9 +74,12 @@ def man(counter):
     global parts
     for part in range (counter):
         shape(parts[part])
-
+<<<<<<< HEAD
+=======
     
 
+>>>>>>> 118f9c2e9979b5ee9a6e5e97cfa5c4da577fb624
+    
 def hangman():
     themeSetup()
     platform()
