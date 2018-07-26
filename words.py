@@ -1,5 +1,4 @@
 from Trav import *
-
 def apple():
       square1("a", 260,18)
       square1("p", 278,20)
@@ -7,7 +6,6 @@ def apple():
       square1("l", 318,10)
       square1("e", 328,20)
       
-
 def drake():
     square2("d", 260,18)
     square2("r", 278,15)
@@ -30,6 +28,7 @@ def googler():
     square4("l", 338,10)
     square4("e", 348,20)
     square4("r", 368,20)
+
     
 def wings():
     square5("w", 260,25)

@@ -1,5 +1,11 @@
+<<<<<<< HEAD
+from Arcade2 import * 
+add_library('minim') 
+from random import *
+=======
 from Arcade2 import *
 
+>>>>>>> 118f9c2e9979b5ee9a6e5e97cfa5c4da577fb624
 apple = {
          "a": False,
          "e": False,
@@ -61,7 +67,6 @@ march = {
          }
 nomarch=["w","s","f","d","g","k","j","p","l","n","o","q","i","b","t","u",
          "v","e","x","y","z"]
-
 def square1 (letter, x,w):
     global apple
     if apple[letter]:
@@ -87,7 +92,6 @@ def square2 (letter, x,w):
 def square3(letter, x,w):
      global beige
      if beige[letter]:
-
          noFill()
      else:
          fill(0)
@@ -99,25 +103,21 @@ def square3(letter, x,w):
 def square4(letter, x,w):
      global googler
      if googler[letter]:
-
          noFill()
      else:
          fill(0)
      if keyPressed:
-
          if key == letter :
-             googler[letter]=True   
+             googler[letter]=True 
      rect(x, 475, w, 30)
     
 def square5(letter, x,w):
      global wings
      if wings[letter]:
-
          noFill()
      else:
          fill(0)
      if keyPressed:
-
          if key == letter :
              wings[letter]=True   
      rect(x, 475, w, 30)
@@ -125,13 +125,24 @@ def square5(letter, x,w):
 def square6(letter, x,w):
      global march
      if march[letter]:
-
          noFill()
      else:
          fill(0)
      if keyPressed:
-
          if key == letter :
              march[letter]=True   
      rect(x, 475, w, 30)
+<<<<<<< HEAD
+def gameover (counter):
+    if counter == 6:
+        fill(0)
+        rect(0, 0, 600, 600)
+        textSize(60)
+        fill(randint(0,255),randint(0,255),randint(0,255))
+        text("GAME OVER", 125, 300)
+   
+    
+    
+=======
      
+>>>>>>> 118f9c2e9979b5ee9a6e5e97cfa5c4da577fb624
