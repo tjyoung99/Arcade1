@@ -2,6 +2,8 @@ from random import *
 from Hangman2 import *
 from Trav import *
 from words import *
+
+
 keywords = {
             "apple" : "Fruits",
             "drake" : "Celebrities",
@@ -13,7 +15,7 @@ keywords = {
             }
 
 def man1():
-    global parts
+    global parts, font
     head=createShape(ELLIPSE,330, 120, 40, 40) #hangman head
     leftarm=createShape(LINE,330,170, 310, 190)  #left hand
     rightarm=createShape(LINE,330,170, 350, 190) #right hand
@@ -21,6 +23,7 @@ def man1():
     rightleg=createShape(LINE,330, 240, 350, 270) #right leg
     body=createShape(LINE,330, 140, 330, 240)  #hangman body
     parts=[head,leftarm,rightarm,leftleg,rightleg,body]
+    
 
 parts=[]
 
@@ -65,8 +68,9 @@ def logo():
     
         
 def photo():
-    img = loadImage("gr.png")
-    image(img, 200, 15)
+    img = loadImage("google-logo.png")
+    image(img, 190, 20, width/10, height/10)  
+
     
 def man(counter):
     global parts
@@ -81,6 +85,7 @@ def hangman():
     platform()
     logo()
     photo()
+
     
 
  

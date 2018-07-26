@@ -22,6 +22,7 @@ def draw():
     hangman()
     apple()
     man(counter)
+   
     
     
     if started:
@@ -34,9 +35,10 @@ def draw():
         Exit()
            
     else:
+        wallpaper()
         startup()
-        photo()
-        logo()
+        logo() 
+        photo()   
 
 def mouseClicked():
     global started
