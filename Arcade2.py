@@ -14,6 +14,7 @@ keywords = {
 
 def man1():
     global parts
+    fill(0)
     head=createShape(ELLIPSE,330, 120, 40, 40) #hangman head
     leftarm=createShape(LINE,330,170, 310, 190)  #left hand
     rightarm=createShape(LINE,330,170, 350, 190) #right hand
@@ -72,10 +73,7 @@ def man(counter):
     global parts
     for part in range (counter):
         shape(parts[part])
-
-
     
-
 def hangman():
     themeSetup()
     platform()

@@ -1,6 +1,6 @@
-from Arcade2 import *
-
-
+from Arcade2 import * 
+add_library('minim') 
+from random import *
 apple = {
          "a": False,
          "e": False,
@@ -62,7 +62,6 @@ march = {
          }
 nomarch=["w","s","f","d","g","k","j","p","l","n","o","q","i","b","t","u",
          "v","e","x","y","z"]
-
 def square1 (letter, x,w):
     global apple
     if apple[letter]:
@@ -74,8 +73,6 @@ def square1 (letter, x,w):
             apple[letter]=True   
     rect(x, 475, w, 30)
     
-<<<<<<< HEAD
-=======
 def square2 (letter, x,w):
     global drake
     if drake[letter]:
@@ -137,5 +134,13 @@ def square6(letter, x,w):
          if key == letter :
              march[letter]=True   
      rect(x, 475, w, 30)
-     
->>>>>>> 7dbfa0b7ed7bdb88488fd9641ccbcac727e33f7e
+def gameover (counter):
+    if counter == 6:
+        fill(0)
+        rect(0, 0, 600, 600)
+        textSize(60)
+        fill(randint(0,255),randint(0,255),randint(0,255))
+        text("GAME OVER", 125, 300)
+   
+    
+    

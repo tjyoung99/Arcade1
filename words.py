@@ -5,9 +5,6 @@ def apple():
       square1("p", 298,20)
       square1("l", 318,10)
       square1("e", 328,20)
-      
-<<<<<<< HEAD
-=======
 def drake():
     square2("d", 260,18)
     square2("r", 278,15)
@@ -44,4 +41,3 @@ def march():
     square6("r", 307,15)
     square6("c", 322,16)
     square6("h", 338,18)
->>>>>>> 7dbfa0b7ed7bdb88488fd9641ccbcac727e33f7e

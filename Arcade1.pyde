@@ -2,20 +2,7 @@ from random import *
 from Arcade2 import *
 from Trav import* 
 from words import *
-<<<<<<< HEAD
 add_library('minim') 
-
-
-def setup(): 
-    size(600,600)
-    
-    global player 
-    minim = Minim (this)
-    player = minim.loadFile("videogame.mp3")
-    player.play()
-
-        
-=======
 from startmenu import *
 started = False 
 counter=0
@@ -23,19 +10,21 @@ counter=0
 def setup(): 
     size(600,600)
     man1()
-   
+    photo()
+    logo()
     
->>>>>>> 7dbfa0b7ed7bdb88488fd9641ccbcac727e33f7e
+    global player 
+    minim = Minim (this)
+    player = minim.loadFile("videogame.mp3")
+    player.play()
+    
 def draw():
     background(255)
     global started
     hangman()
-<<<<<<< HEAD
-    man()
-    apple()
-
-=======
     man(counter)
+    gameover(counter)
+    
     if started:
         themeSetup()
         platform()
@@ -43,13 +32,9 @@ def draw():
         photo()
         answers()
         man(counter)
-    
-    
-      
     else:
         startup()
-        photo()
-        logo()
+
 
 def mouseClicked():
     global started
@@ -84,6 +69,4 @@ def keyReleased():
             if key == nomarch[letters]:
                 counter=counter+1
 
-    
->>>>>>> 7dbfa0b7ed7bdb88488fd9641ccbcac727e33f7e
     
