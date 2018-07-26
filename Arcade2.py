@@ -3,7 +3,6 @@ from Hangman2 import *
 from Trav import *
 from words import *
 
-
 keywords = {
             "apple" : "Fruits",
             "drake" : "Celebrities",
@@ -11,17 +10,11 @@ keywords = {
             "googler" : "Jobs",
             "wings" : "Foods",
             "march" : "Months",
-            
-
             }
 
 def man1():
-<<<<<<< HEAD
     global parts, font
-=======
-    global parts
     fill(0)
->>>>>>> a2aa44f72bff85c1db3b5fdf4238cfed23b5b687
     head=createShape(ELLIPSE,330, 120, 40, 40) #hangman head
     leftarm=createShape(LINE,330,170, 310, 190)  #left hand
     rightarm=createShape(LINE,330,170, 350, 190) #right hand
@@ -29,7 +22,6 @@ def man1():
     rightleg=createShape(LINE,330, 240, 350, 270) #right leg
     body=createShape(LINE,330, 140, 330, 240)  #hangman body
     parts=[head,leftarm,rightarm,leftleg,rightleg,body]
-    
 
 parts=[]
 
@@ -60,7 +52,6 @@ def themeSetup():
     fill(0)
     text(guessingWords, 260, 500)
 
-        
 def platform():
     line(250, 100, 250, 200) #first middle line
     line(300, 100, 250, 100) #right line ( where hangman head is placed)
@@ -71,35 +62,18 @@ def logo():
     fill (0)
     textSize (20)
     text ("OOGLE MAN", 250, 50)
-    
         
 def photo():
     img = loadImage("google-logo.png")
     image(img, 190, 20, width/10, height/10)  
 
-    
 def man(counter):
     global parts
     for part in range (counter):
         shape(parts[part])
-<<<<<<< HEAD
-=======
-    
 
->>>>>>> 118f9c2e9979b5ee9a6e5e97cfa5c4da577fb624
-    
 def hangman():
     themeSetup()
     platform()
     logo()
     photo()
-
-    
-
- 
-
-   
-
-    
-
-    
