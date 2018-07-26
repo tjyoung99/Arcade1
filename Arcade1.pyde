@@ -42,9 +42,9 @@ def mouseClicked():
     global started
     started = True
                         
-# def mousePressed():
-#     if mousePressed and (mouseX >= 550 and mouseX <= 6000) and (mouseY >= 550 and mouseY <= 600):
-#        exit()
+def mousePressed():
+    if mousePressed and (mouseX >= 550 and mouseX <= 6000) and (mouseY >= 550 and mouseY <= 600):
+       exit()
        
     
 def keyReleased():
