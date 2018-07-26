@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 from Arcade2 import * 
 add_library('minim') 
 from random import *
-=======
 from Arcade2 import *
 
->>>>>>> 118f9c2e9979b5ee9a6e5e97cfa5c4da577fb624
+
 apple = {
          "a": False,
          "e": False,
@@ -132,7 +130,7 @@ def square6(letter, x,w):
          if key == letter :
              march[letter]=True   
      rect(x, 475, w, 30)
-<<<<<<< HEAD
+
 def gameover (counter):
     if counter == 6:
         fill(0)
@@ -143,6 +141,3 @@ def gameover (counter):
    
     
     
-=======
-     
->>>>>>> 118f9c2e9979b5ee9a6e5e97cfa5c4da577fb624
