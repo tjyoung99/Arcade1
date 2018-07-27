@@ -13,10 +13,9 @@ def Exit():
     fill(0)
     rect(550, 550, 50, 50)
     fill(255)
+    textSize(20)
     text ("Exit", 560, 580)
     
 def restart():
     fill(0)
-    rect(0, 550, 100, 100)
-    fill(255)
-    text ("Restart", 20, 580)
+    text ("Guess letters using keyboard", 165, 460)

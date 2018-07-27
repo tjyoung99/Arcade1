@@ -3,6 +3,7 @@ from random import *
 from Arcade2 import *
 
 
+
 apple = {
          "a": False,
          "e": False,
@@ -84,7 +85,7 @@ def square2 (letter, x,w):
         if key == letter :
             drake[letter]=True   
     rect(x, 475, w, 30)
-
+   
 def square3(letter, x,w):
      global beige
      if beige[letter]:
@@ -128,6 +129,97 @@ def square6(letter, x,w):
          if key == letter :
              march[letter]=True   
      rect(x, 475, w, 30)
+     
+def win1():
+     global drake
+     win = True
+     for letter in drake:
+         if drake[letter] == False:
+             win = False
+
+     if win:
+        fill(0)
+        rect(0, 0, 600, 600)
+        textSize(40)
+        fill(randint(0,255),randint(0,255),randint(0,255))
+        text("YOU'RE A WINNER!", 125, 300)
+        
+def win2():
+     global wings
+     win = True
+     for letter in wings:
+         if wings[letter] == False:
+             win = False
+
+     if win:
+        fill(0)
+        rect(0, 0, 600, 600)
+        textSize(40)
+        fill(randint(0,255),randint(0,255),randint(0,255))
+        text("YOU'RE A WINNER!", 125, 300)
+        
+        
+def win3():
+     global march
+     win = True
+     for letter in march:
+         if march[letter] == False:
+             win = False
+
+     if win:
+        fill(0)
+        rect(0, 0, 600, 600)
+        textSize(40)
+        fill(randint(0,255),randint(0,255),randint(0,255))
+        text("YOU'RE A WINNER!", 125, 300)
+        
+
+def win4():
+     global beige
+     win = True
+     for letter in beige:
+         if beige[letter] == False:
+             win = False
+
+     if win:
+        fill(0)
+        rect(0, 0, 600, 600)
+        textSize(40)
+        fill(randint(0,255),randint(0,255),randint(0,255))
+        text("YOU'RE A WINNER!", 125, 300)
+        
+
+def win5():
+     global apple
+     win = True
+     for letter in apple:
+         if apple[letter] == False:
+             win = False
+
+     if win:
+        fill(0)
+        rect(0, 0, 600, 600)
+        textSize(40)
+        fill(randint(0,255),randint(0,255),randint(0,255))
+        text("YOU'RE A WINNER!", 125, 300)
+        
+
+def win6():
+     global googler
+     win = True
+     for letter in googler:
+         if googler[letter] == False:
+             win = False
+
+     if win:
+        fill(0)
+        rect(0, 0, 600, 600)
+        textSize(40)
+        fill(randint(0,255),randint(0,255),randint(0,255))
+        text("YOU'RE A WINNER!", 125, 300)
+        
+
+
 
 def gameover (counter):
     if counter == 6:

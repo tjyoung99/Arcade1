@@ -4,12 +4,12 @@ from Trav import *
 from words import *
 
 keywords = {
-            "apple" : "Fruits",
-            "drake" : "Celebrities",
-            "beige" : "Colors",
-            "googler" : "Jobs",
-            "wings" : "Foods",
-            "march" : "Months",
+        "apple" : "Fruits",
+        "drake" : "Celebrities",
+        "beige" : "Colors",
+        "googler" : "Jobs",
+        "wings" : "Foods",
+        "march" : "Months",
             }
 
 def man1():
@@ -30,16 +30,22 @@ randkey = choice(keywords.keys())
 def answers():
  if randkey=="apple":
     apple()
+    win5()
  elif randkey=="drake":
     drake()
+    win1()
  elif randkey=="beige":
     beige()
+    win4()
  elif randkey=="googler":
     googler()
+    win6()
  elif randkey=="wings":
     wings()
+    win2()
  elif randkey=="march":
     march() 
+    win3()
 
 def themeSetup():
     topic = keywords[randkey]

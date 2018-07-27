@@ -7,11 +7,14 @@ from startmenu import *
 started = False
 counter=0
 
+
+
 def setup(): 
     size(600,600)
     man1()
     photo()
-    logo()    
+    logo()
+       
 
     global player 
     minim = Minim (this)
@@ -24,6 +27,7 @@ def draw():
     hangman()
     gameover(counter)
     man(counter)
+    Exit()
 
     if started:
         themeSetup()
@@ -32,8 +36,8 @@ def draw():
         photo()
         answers()
         man(counter)
-        Exit()
         restart()
+       
                     
     else:
         wallpaper()
@@ -48,16 +52,6 @@ def mouseClicked():
     if (mouseX >= 550 and mouseX <= 600) and (mouseY >= 550 and mouseY <= 600):
        exit()
 
-    if (mouseX >= 0 and mouseX <= 100) and (mouseY >= 550 and mouseY <= 600):
-       started = False
-#        button()
-       
-# def button():
-#     counter = 0
-#     randkey = choice(keywords.keys())
-#     man(counter)  
-#     keyReleased() 
-#     answers()    
 
 def keyReleased():
     global counter
@@ -65,23 +59,34 @@ def keyReleased():
         for letters in range (len (noapple)):
             if key == noapple[letters]:
                 counter=counter+1
+       
+          
     if randkey=="drake":
         for letters in range (len (nodrake)):
             if key == nodrake[letters]:
                 counter=counter+1
+            
+            
     if randkey=="beige":
         for letters in range (len (nobeige)):
             if key == nobeige[letters]:
                 counter=counter+1
+            
+                
     if randkey=="googler":
         for letters in range (len (nogoogler)):
             if key == nogoogler[letters]:
                 counter=counter+1
+            
+            
     if randkey=="wings":
         for letters in range (len (nowings)):
             if key == nowings[letters]:
                 counter=counter+1
+            
+            
     if randkey=="march":
         for letters in range (len (nomarch)):
             if key == nomarch[letters]:
                 counter=counter+1
+                           
